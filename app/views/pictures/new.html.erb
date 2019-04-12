@@ -1,0 +1,5 @@
+<%= form_with model: @picture, local: true do |form| %>
+  <%= form.text_field :title %><br><br>
+  <%= form.file_field :image %><br><br>
+  <%= form.submit %>
+<% end %>

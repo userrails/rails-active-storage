@@ -1,0 +1,6 @@
+<div>
+  <p>Title: <%= @picture.title %></p>
+  <p>
+    <%= image_tag(@picture.image, width: 200) if @picture.image.attached? %>
+  </p>
+</div>
