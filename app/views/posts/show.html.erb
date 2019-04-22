@@ -1,0 +1,9 @@
+<% if @post.images.attached? %>
+<p>
+  <strong>Images:</strong>
+  <br>
+  <% @post.images.each do |image| %>
+    <%= image_tag(image) %>
+  <% end %>
+</p>
+<% end %>

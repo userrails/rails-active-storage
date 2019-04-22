@@ -1,0 +1,6 @@
+<%= form_with model: @post, local: true do |form| %>
+  Title: <%= form.text_field :title %><br><br>
+  Content: <%= form.text_area :content %><br>
+  Images: <%= form.file_field :images, multiple: true %><br>
+  <%= form.submit %>  
+<% end %>
