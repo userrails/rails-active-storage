@@ -3,7 +3,8 @@
   <p><%= post.content %></p>
 
   <% post.images.each do |image| %>
-    <%= image_tag(image) %>
+    <%= image_tag(image, {:style => "width:100px; height: 100px;"}) %>
+    <%= link_to "x", post_image_path(post, image), method: :delete, style: "color: red;" %>
   <% end %>
 
 <% end %>
